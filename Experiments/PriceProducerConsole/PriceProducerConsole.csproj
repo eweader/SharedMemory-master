@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F411D949-F0FF-4C29-9E2F-24847F682532}</ProjectGuid>
+    <ProjectGuid>{DB20452D-6767-4719-A5BA-8D64CCE8D9AD}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ProducerConsole</RootNamespace>
-    <AssemblyName>ProducerConsole</AssemblyName>
+    <RootNamespace>PriceProducerConsole</RootNamespace>
+    <AssemblyName>PriceProducerConsole</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,14 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="PS.Common.Core, Version=1.0.0.53, Culture=neutral, processorArchitecture=x86">
-      <HintPath>..\packages\PS.Common.Core.Package.1.0.0.53\lib\net46\PS.Common.Core.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="PS.Common.Interfaces, Version=1.0.0.53, Culture=neutral, processorArchitecture=x86">
-      <HintPath>..\packages\PS.Common.Core.Package.1.0.0.53\lib\net46\PS.Common.Interfaces.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -56,11 +48,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SharedMemory\SharedMemory.csproj">
-      <Project>{DFA407A8-AEA8-48BB-AE6C-709DF51D276F}</Project>
+    <ProjectReference Include="..\..\SharedMemory\SharedMemory.csproj">
+      <Project>{dfa407a8-aea8-48bb-ae6c-709df51d276f}</Project>
       <Name>SharedMemory</Name>
     </ProjectReference>
   </ItemGroup>
